@@ -28,6 +28,7 @@ class ViewController: UIViewController {
 
     @IBAction func sendMailButtonPressed(sender: UIButton) {
         // code will evaluate when press the button
+        // this will change the UI
         self.messageLabel.text = enterMessageTextField.text
         self.messageLabel.hidden = false
         self.enterMessageTextField.text = ""
