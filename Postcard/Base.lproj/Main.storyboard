@@ -47,7 +47,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aBV-Eb-uxl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-78" y="-3"/>
+            <point key="canvasLocation" x="33" y="-3"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
@@ -75,15 +75,6 @@
                                     <rect key="frame" x="16" y="252" width="288" height="30"/>
                                 </variation>
                             </textField>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Idc-dE-VwM">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="72" width="200" height="134"/>
-                                </variation>
-                            </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Enter name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OsO-0R-vMt">
                                 <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -105,24 +96,44 @@
                                     <action selector="sendMailButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="OQ6-xO-ZrB"/>
                                 </connections>
                             </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Idc-dE-VwM">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="72" width="200" height="49"/>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="77" width="200" height="67"/>
+                                </variation>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z4q-oo-LAb">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="QP8-5B-xPk"/>
                                 <exclude reference="6zq-8h-KXx"/>
-                                <exclude reference="Idc-dE-VwM"/>
                                 <exclude reference="OsO-0R-vMt"/>
                                 <exclude reference="0E0-LS-jRG"/>
+                                <exclude reference="Idc-dE-VwM"/>
+                                <exclude reference="Z4q-oo-LAb"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="QP8-5B-xPk"/>
                                 <include reference="6zq-8h-KXx"/>
-                                <include reference="Idc-dE-VwM"/>
                                 <include reference="OsO-0R-vMt"/>
                                 <include reference="0E0-LS-jRG"/>
+                                <include reference="Idc-dE-VwM"/>
+                                <include reference="Z4q-oo-LAb"/>
                             </mask>
                         </variation>
                     </view>
@@ -132,12 +143,13 @@
                         <outlet property="enterMessageTextField" destination="6zq-8h-KXx" id="cgu-qC-BE0"/>
                         <outlet property="enterNameTextField" destination="OsO-0R-vMt" id="q5s-Ip-27S"/>
                         <outlet property="messageLabel" destination="Idc-dE-VwM" id="o7a-rN-tiP"/>
+                        <outlet property="nameLabel" destination="Z4q-oo-LAb" id="9uO-B2-arn"/>
                         <outlet property="sendMailButton" destination="0E0-LS-jRG" id="ynT-YN-iRh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="353" y="-3"/>
+            <point key="canvasLocation" x="573" y="-3"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Erm-sX-B8G">
